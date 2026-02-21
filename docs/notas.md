@@ -47,7 +47,7 @@ que possamos fazer requisições e receber os resultados.
 - Script de treino - OK
 - Baseline - TF-IDF, Metricas e salvar modelo - OK
 - criar data, treinar, predict e utils (vou fazer o pre processamento nele) - OK
-- API
+- API - OK
 - Avaliação de erros e testes
 - README
 - Docker
@@ -55,4 +55,4 @@ que possamos fazer requisições e receber os resultados.
 
 ---
 
-Foco agora na criação da API, testes e readme. Docker e possiveis melhorias vem depois que tudo estiver ok.
+Api criada com fastapi, mas achei o resultado final complicado de ler e inserir. então vou avaliar retornar algo mais simples amanhã ou levar para docker logo.
