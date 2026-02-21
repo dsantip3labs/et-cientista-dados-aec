@@ -44,9 +44,15 @@ que possamos fazer requisições e receber os resultados.
 
 - Estrutura - OK
 - EDA - feito (resumo e notebook)
-- Script de treino
-- Baseline - TF-IDF, Metricas e salvar modelo
-- Avaliação de erros e testes
+- Script de treino - OK
+- Baseline - TF-IDF, Metricas e salvar modelo - OK
+- criar data, treinar, predict e utils (vou fazer o pre processamento nele) - OK
 - API
+- Avaliação de erros e testes
 - README
 - Docker
+
+
+---
+
+Foco agora na criação da API, testes e readme. Docker e possiveis melhorias vem depois que tudo estiver ok.

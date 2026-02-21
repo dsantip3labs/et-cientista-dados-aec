@@ -1,4 +1,5 @@
 # EDA — Resumo (articles.csv | Folha/UOL)
+- Texto organizado por IA
 
 ## 1) Objetivo do notebook
 - Avaliar **qualidade dos dados** (nulos, vazios, duplicados, tipos).

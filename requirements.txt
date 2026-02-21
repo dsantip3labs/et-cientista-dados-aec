@@ -5,3 +5,5 @@ matplotlib
 seaborn
 kagglehub
 matplotlib
+joblib
+pytest
