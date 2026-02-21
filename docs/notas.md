@@ -32,4 +32,21 @@ que possamos fazer requisições e receber os resultados.
 3. Modelagem: metodologia aplicada, técnicas, algoritmos e métricas utilizados.
 4. EDA: resultados iniciais de análise, uso de tais resultados para modelagem
 
+# Anotações rapidas
 
+- Levar o avl_dados para um notebook, acho que vai ser melhor para apresentar.
+- Seguir com F1 macro, desbalanceamento ficou alto e vou seguir com a remoção de algumas categorias.
+- input da api vai ser o titulo da materia ou uma parte do texto.
+- vou rodar local com fastapi mesmo
+
+
+# Etapas
+
+- Estrutura - OK
+- EDA - feito (resumo e notebook)
+- Script de treino
+- Baseline - TF-IDF, Metricas e salvar modelo
+- Avaliação de erros e testes
+- API
+- README
+- Docker
