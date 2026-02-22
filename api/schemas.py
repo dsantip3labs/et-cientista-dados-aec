@@ -7,10 +7,10 @@ class SolicitacaoPredicao(BaseModel):
     top_k: int = Field(3, ge=1, le=10, description="Quantidade de classes retornadas no top-k")
 
 class TopKItem(BaseModel):
-    label: str
+    categoria: str
     score: float
 
 class RespostaPredicao(BaseModel):
     categoria: str
-    confidence: Optional[float] = None
+    confiança: Optional[float] = None
     top_k: List[TopKItem] = []

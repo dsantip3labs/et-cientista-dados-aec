@@ -15,15 +15,15 @@ def predict_one(model, *, title: str = "", text: str = "", top_k: int = 3):
         raise ValueError("Informe ao menos 'title' ou 'text'.")
 
     pred = model.predict([final_text])[0]
-    result = {"categoria": str(pred), "confidence": None, "top_k": []}
+    result = {"categoria": str(pred), "confiança": None, "top_k": []}
 
     if hasattr(model, "predict_proba"):
         proba = model.predict_proba([final_text])[0]
         classes = model.classes_
         idx = np.argsort(proba)[::-1][:top_k]
 
-        result["confidence"] = float(proba[idx[0]])
-        result["top_k"] = [{"label": str(classes[i]), "score": float(proba[i])} for i in idx]
+        result["confiança"] = float(proba[idx[0]])
+        result["top_k"] = [{"categoria": str(classes[i]), "score": float(proba[i])} for i in idx]
 
     return result
 

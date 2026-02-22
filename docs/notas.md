@@ -38,6 +38,8 @@ que possamos fazer requisições e receber os resultados.
 - Seguir com F1 macro, desbalanceamento ficou alto e vou seguir com a remoção de algumas categorias.
 - input da api vai ser o titulo da materia ou uma parte do texto.
 - vou rodar local com fastapi mesmo
+- avaliar se vale a pena fazer uma interface com tkinter (vou ter que estudar ele rapido)
+-
 
 
 # Etapas
@@ -48,8 +50,8 @@ que possamos fazer requisições e receber os resultados.
 - Baseline - TF-IDF, Metricas e salvar modelo - OK
 - criar data, treinar, predict e utils (vou fazer o pre processamento nele) - OK
 - API - OK
-- Avaliação de erros e testes
-- README
+- Avaliação de erros e testes - OK
+- README - OK
 - Docker
 
 

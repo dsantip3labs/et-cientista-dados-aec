@@ -26,7 +26,6 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Classificador de Notícias", version="1.0", lifespan=lifespan)
 
-
 @app.get("/teste")
 def health():
     return {"status": "ok"}

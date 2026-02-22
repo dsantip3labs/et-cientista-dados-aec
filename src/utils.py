@@ -69,3 +69,11 @@ def sample_errors(
                 row["pred_confidence"] = float(max(proba[i]))
             rows.append(row)
     return pd.DataFrame(rows).head(top_n)
+
+def teste_normalizar_texto_returns_string():
+    assert isinstance(normalizar_texto("  oi  "), str)
+    assert normalizar_texto("  oi  ") == "oi"
+
+def test_join_title_text_basic():
+    out = juncao_texto_titulo("Titulo", "Corpo")
+    assert isinstance(out, str)
