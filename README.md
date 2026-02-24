@@ -17,7 +17,7 @@ Rodar localmente, fazer solicitação em HTTP (localhost) e receber categoria + 
 
 ## Requisistos
 
-- Python | Minimo >= 13.1
+- Python | Minimo >= 3.13
 - Git (opcional)
 - Docker (opcional)
 - Porta 8000 livre (quando usado o docker)

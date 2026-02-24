@@ -10,10 +10,6 @@ caminho = 'arquivos/articles.csv'
 
 dados = pd.read_csv(caminho, encoding='ISO-8859-1', sep=',')
 
-caminho = 'sample_data/articles.csv'
-
-dados = pd.read_csv(caminho, encoding='utf-8', sep=',')
-
 # conferindo os dados, as colunas, tipos de dados, quantidade de linhas e os dtypes.
 print(dados.info())
 

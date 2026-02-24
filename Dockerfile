@@ -19,7 +19,7 @@ COPY api ./api
 COPY src ./src
 
 RUN mkdir -p /modelo
-COPY modelo/modelo.joblib /modelo/modelo.joblib
+
 
 EXPOSE 8000
 CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port ${PORT} --workers ${WORKERS}"]
