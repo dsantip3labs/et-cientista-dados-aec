@@ -52,8 +52,9 @@ que possamos fazer requisições e receber os resultados.
 - API - OK
 - Avaliação de erros e testes - OK
 - README - OK
-- Docker
-
+- Docker - Vai ficar pendente, preciso estudar melhor isso para entender como segue a criação e produção em um container docker.
+- Criar o ppt organizado com esse repo
+- Criar setup de teste da API
 
 ---
 

@@ -18,9 +18,15 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Carregando modelo...")
-    app.state.model = carregar_modelo(MODEL_PATH)
-    logger.info("Modelo carregado com sucesso.")
+    app.state.model = None
+    try:
+        print(f"Carregando modelo em: {MODEL_PATH}")
+        app.state.model = carregar_modelo(MODEL_PATH)
+        print("Modelo carregado com sucesso.")
+    except FileNotFoundError:
+        print(f"Modelo não encontrado em {MODEL_PATH}.")
+    except Exception as e:
+        print(f"Erro ao carregar modelo: {e}")
     yield
     app.state.model = None
 
@@ -34,7 +40,6 @@ def health():
 def predict(req: SolicitacaoPredicao):
     if app.state.model is None:
         raise HTTPException(status_code=503, detail="Modelo não carregado.")
-
     try:
         return predict_one(app.state.model, title=req.title, text=req.text, top_k=req.top_k)
     except ValueError as e:

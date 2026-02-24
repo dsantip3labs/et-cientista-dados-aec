@@ -3,13 +3,14 @@
 Esta é a documentação para o projeto. Inclui:
 
 - Guia de instalação e utilização
-- Documentação da API
+- Execução local
+- Docker compose
 
 ## Objetivo
 
 Rodar localmente, fazer solicitação em HTTP (localhost) e receber categoria + top-k.
 
-### Base de dados
+### Conjunto de dados
 
 - Kaggle: https://www.kaggle.com/datasets/marlesson/news-of-the-site-folhauol
 
@@ -18,6 +19,8 @@ Rodar localmente, fazer solicitação em HTTP (localhost) e receber categoria + 
 
 - Python | Minimo >= 13.1
 - Git (opcional)
+- Docker (opcional)
+- Porta 8000 livre (quando usado o docker)
 
 ## Libs utilizadas
 
@@ -32,7 +35,22 @@ Rodar localmente, fazer solicitação em HTTP (localhost) e receber categoria + 
 - fastapi
 - uvicorn
 
-## Instalação
+## Rodando com Docker Compose
+
+Por limite de tamanho, o arquivo do modelo não vem no repo.
+
+Faça download desse repositorio diretamente no github ou faça um clone com git.
+
+`git clone https://github.com/dsantip3labs/et-cientista-dados-aec.git`
+
+
+### Subir a aplicação
+
+`docker compose up --build`
+
+- Modelo irá ser baixado automaticamente via github.
+
+## Instalação local
 
 > Execute no cmd
 
@@ -96,10 +114,3 @@ curl -X 'POST' \
   "text": "",
   "top_k": 3
 }' `
-
-
-## Testes
-
-> Rode na raiz
-
-`pytest -q`

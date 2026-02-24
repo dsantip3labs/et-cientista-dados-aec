@@ -1,0 +1,9 @@
+arquivos/
+*.csv
+
+_pycache_/
+*.pyc
+.venv/
+.env
+dist/
+build/
